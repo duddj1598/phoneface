@@ -1,6 +1,6 @@
 let URL;
-        const urlMale = "https://teachablemachine.withgoogle.com/models/y6rFybpdT/";
-        const urlFemale = "https://teachablemachine.withgoogle.com/models/WhUPgENPE/";
+const urlMale = 'https://teachablemachine.withgoogle.com/models/y6rFybpdT/';
+const urlFemale = 'https://teachablemachine.withgoogle.com/models/WhUPgENPE/';
 let model, labelContainer, maxPredictions;
 
 async function init() {
@@ -70,6 +70,26 @@ function readURL(input) {
     }
 }
 
-function gaReload() {
+function gaReload1() {
+    event.preventDefault();
+    $('.cd-popup').addClass('is-visible');
+}
+function gaReload2() {
     window.location.reload();
 }
+
+jQuery(document).ready(function ($) {
+    //close popup
+    $('.cd-popup').on('click', function (event) {
+        if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup')) {
+            event.preventDefault();
+            $(this).removeClass('is-visible');
+        }
+    });
+    //close popup when clicking the esc keyboard button
+    $(document).keyup(function (event) {
+        if (event.which == '27') {
+            $('.cd-popup').removeClass('is-visible');
+        }
+    });
+});

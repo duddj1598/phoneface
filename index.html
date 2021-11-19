@@ -120,7 +120,7 @@
                     <button
                         type="button p-2"
                         class="try-again-btn"
-                        onclick="gaReload();"
+                        onclick="gaReload1();"
                         data-toggle="modal"
                         data-target="#adModal"
                     >
@@ -133,7 +133,7 @@
             <ins
                 class="kakao_ad_area"
                 style="display: none;"
-                data-ad-unit="DAN-2nAF3Ml9nCYkTiaA"
+                data-ad-unit="DAN-9xSQnuyQRBF5sKJZ"
                 data-ad-width="320"
                 data-ad-height="100"
             ></ins>
@@ -170,29 +170,45 @@
             type="text/javascript"
             src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eb94be216af0313"
         ></script>
-        <div class="popup">
-            <div class="body">
-                <h5 class="modal-title" id="adModalLabel">(AD)광고</h5>
-                <ins
-                    class="kakao_ad_area"
-                    style="display: none;"
-                    data-ad-unit="DAN-51uONV0xER2o4vIZ"
-                    data-ad-width="300"
-                    data-ad-height="250"
-                ></ins>
-                <script
-                    type="text/javascript"
-                    src="//t1.daumcdn.net/kas/static/ba.min.js"
-                    async
-                ></script>
-                <a href="#." style="color: black;">X</a>
+        <div class="cd-popup" role="alert">
+            <div class="cd-popup-container">
+                <p>(AD)광고 - 재시도를 한번 더 눌러주세요.</p>
+                <ul>
+                    <!-- <div class="ad-banner">
+                        <ins
+                            class="kakao_ad_area"
+                            style="display: none;"
+                            data-ad-unit="DAN-pGZ2uVDGp3bboKJj"
+                            data-ad-width="320"
+                            data-ad-height="100"
+                        ></ins>
+                        <script
+                            type="text/javascript"
+                            src="//t1.daumcdn.net/kas/static/ba.min.js"
+                            async
+                        ></script>
+                    </div> -->
+<ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-zb0rxqDQo8osEU9Q" 
+ data-ad-width   = "320" 
+ data-ad-height  = "50"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                </ul>
+                <ul class="cd-buttons" style="padding-left: 0px;">
+                    <li onclick="gaReload2();"><a href="#0">Yes</a></li>
+                </ul>
             </div>
-            <div class="bg"></div>
         </div>
-        <script>
-            $('.popup a').click(function () {
-                $('.popup').hide();
-            });
-        </script>
+        <!-- cd-popup -->
     </body>
+<!--     
+    Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ -->
 </html>
